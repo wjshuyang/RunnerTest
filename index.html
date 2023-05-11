@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=720 height=1280 style="width: 720px; height: 1280px; background: #231F20"></canvas>
-    <script src="Build/RunnerWebglDouYinSuCai.loader.js"></script>
+    <script src="Build/webgl.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,10 +25,10 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/RunnerNoSDK511.data",
-        frameworkUrl: "Build/RunnerNoSDK511.framework.js",
-        codeUrl: "Build/RunnerNoSDK511.wasm",
-        symbolsUrl: "Build/RunnerNoSDK511.symbols.json",
+        dataUrl: "Build/webgl.data",
+        frameworkUrl: "Build/webgl.framework.js",
+        codeUrl: "Build/webgl.wasm",
+        symbolsUrl: "Build/webgl.symbols.json",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "GNetop",
         productName: "跑酷英雄3D",
