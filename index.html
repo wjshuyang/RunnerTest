@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | 跑酷英雄3D</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("unityContainer", "Build/RunnerWebglDouYinSuCai.json");
+  function Reset()
+    {
+        var canvas = document.getElementById("#canvas");//获取#canvas
+        canvas.height=  document.documentElement.clientHeight;//获取body可见区域高度
+        canvas.width =  document.documentElement.clientWidth;//获取body可见区域高度
+
+    }
+    </script>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+</style>
+  </head>
+  <body onresize="Reset()" ,scroll= no, style="overflow:hidden">
+    <div id="unityContainer" style="width: 100vw; height: 100vh;margin:auto"></div>
+  </body>
+</html>
+
